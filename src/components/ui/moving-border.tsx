@@ -1,5 +1,4 @@
 import React, { CSSProperties } from "react";
-
 import { cn } from "@/lib/utils";
 
 export interface ShimmerButtonProps
@@ -60,9 +59,9 @@ const ShimmerButton = React.forwardRef<HTMLButtonElement, ShimmerButtonProps>(
                         <div className="animate-spin-around absolute inset-[-100%] w-auto rotate-0 [background:conic-gradient(from_calc(270deg-(var(--spread)*0.5)),transparent_0,var(--shimmer-color)_var(--spread),transparent_var(--spread))] [translate:0_0]" />
                     </div>
                 </div>
+
                 {children}
 
-                {/* Highlight */}
                 <div
                     className={cn(
                         "insert-0 absolute h-full w-full",

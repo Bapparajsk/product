@@ -1,8 +1,7 @@
 "use client"
 
-import { AnimatedTooltip } from "../ui/animated-tooltip";
-import {ProjectModal} from "./ProjectsModal";
-import {FlipWords} from "../ui/flip-words";
+import {AnimatedTooltip} from "@/ui/animated-tooltip";
+import {FlipWords} from "@/ui/flip-words";
 import {people} from "@/data/text-data";
 
 export const ProjectsList = () => {
