@@ -11,9 +11,8 @@ export const ProjectsList = () => {
             <div className="text-5xl mx-auto font-normal text-neutral-600 dark:text-neutral-400">
                 Build
                 <FlipWords words={words}/> <br/>
-                websites with Aceternity UI
+                websites with
             </div>
-
             <div className="flex flex-row items-center mt-24 justify-center w-full">
                 <AnimatedTooltip items={people}/>
             </div>

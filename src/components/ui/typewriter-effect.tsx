@@ -32,7 +32,7 @@ export const TypewriterEffectSmooth = ({
                                 <span
                                     key={`char-${index}`}
                                     className={idx === wordsArray.length -1 ? "text-blue-500 dark:text-blue-500" :`text-black dark:text-white`}
-                                > {char} </span>
+                                >{char}</span>
                             ))}
                             &nbsp;
                         </div>
@@ -43,7 +43,7 @@ export const TypewriterEffectSmooth = ({
     };
 
     return (
-        <div className={cn("flex space-x-1 my-6", className)}>
+        <div className={cn("flex space-x-1 my-6 tracking-widest", className)}>
             <motion.div
                 className="overflow-hidden pb-2"
                 initial={{

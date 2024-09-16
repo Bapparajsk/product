@@ -13,76 +13,77 @@ export const words = [
 export const people = [
     {
         id: 1,
-        name: "John Doe",
-        designation: "Software Engineer",
+        name: "Framer Motion",
+        designation: "Animation Library",
         image:
-            "https://images.unsplash.com/photo-1599566150163-29194dcaad36?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=3387&q=80",
+            "/images/framer.jpeg",
     },
     {
         id: 2,
-        name: "Robert Johnson",
-        designation: "Product Manager",
+        name: "Tailwindcss",
+        designation: "Utility First CSS",
         image:
-            "https://images.unsplash.com/photo-1535713875002-d1d0cf377fde?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8Mnx8YXZhdGFyfGVufDB8fDB8fHww&auto=format&fit=crop&w=800&q=60",
+            "/images/tailwind.png",
     },
     {
         id: 3,
-        name: "Jane Smith",
-        designation: "Data Scientist",
+        name: "Next.js",
+        designation: "React Framework",
         image:
-            "https://images.unsplash.com/photo-1580489944761-15a19d654956?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8NXx8YXZhdGFyfGVufDB8fDB8fHww&auto=format&fit=crop&w=800&q=60",
+            "/images/nextjs.png",
     },
     {
         id: 4,
-        name: "Emily Davis",
-        designation: "UX Designer",
+        name: "TypeScript",
+        designation: "Typed JavaScript",
         image:
-            "https://images.unsplash.com/photo-1438761681033-6461ffad8d80?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTB8fGF2YXRhcnxlbnwwfHwwfHx8MA%3D%3D&auto=format&fit=crop&w=800&q=60",
+            "/images/typescript.png",
     },
     {
         id: 5,
-        name: "Tyler Durden",
-        designation: "Soap Developer",
+        name: "GitHub",
+        designation: "Version Control",
         image:
-            "https://images.unsplash.com/photo-1472099645785-5658abf4ff4e?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=3540&q=80",
+            "/images/github.png",
     },
     {
         id: 6,
-        name: "Dora",
-        designation: "The Explorer",
+        name: "Open AI",
+        designation: "GPT-3",
         image:
-            "https://images.unsplash.com/photo-1544725176-7c40e5a71c5e?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=3534&q=80",
+            "/images/openai.jpeg",
     },
+    {
+        id: 7,
+        name: "Vercel",
+        designation: "Hosting",
+        image:
+            "/images/vercel.png",
+    }
 ];
 
 export const testimonials = [
     {
         quote:
-            "It was the best of times, it was the worst of times, it was the age of wisdom, it was the age of foolishness, it was the epoch of belief, it was the epoch of incredulity, it was the season of Light, it was the season of Darkness, it was the spring of hope, it was the winter of despair.",
-        name: "Charles Dickens",
-        title: "A Tale of Two Cities",
+            "I am a Full Stack Developer with experience in building web applications using React, Node.js, and MongoDB. I am passionate about building scalable and maintainable software.",
+        name: "Development",
+        title: "My Development Journey",
     },
     {
         quote:
-            "To be, or not to be, that is the question: Whether 'tis nobler in the mind to suffer The slings and arrows of outrageous fortune, Or to take Arms against a Sea of troubles, And by opposing end them: to die, to sleep.",
-        name: "William Shakespeare",
-        title: "Hamlet",
+            "My Problem solving skills have improved significantly since I started solving problems at LeetCode. I have solved over 800+ problems and I am still learning.",
+        name: "Problem Solve at LeetCode",
+        title: "Problem Solver",
     },
     {
-        quote: "All that we see or seem is but a dream within a dream.",
-        name: "Edgar Allan Poe",
-        title: "A Dream Within a Dream",
-    },
-    {
-        quote:
-            "It is a truth universally acknowledged, that a single man in possession of a good fortune, must be in want of a wife.",
-        name: "Jane Austen",
-        title: "Pride and Prejudice",
+        quote: "Future Plan is to become a Software Engineer and work at a top tech company.",
+        name: "Software Engineer",
+        title: "My Future Plan",
     },
     {
         quote:
-            "Call me Ishmael. Some years ago—never mind how long precisely—having little or no money in my purse, and nothing particular to interest me on shore, I thought I would sail about a little and see the watery part of the world.",
-        name: "Herman Melville",
-        title: "Moby-Dick",
+            "I am a self-taught developer and I have learned a lot of things from the internet. I am always learning new technologies and improving my skills.",
+        name: "Learning",
+        title: "Tools & Technologies",
     },
 ];
