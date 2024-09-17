@@ -17,7 +17,7 @@ import {ProductCard} from "@/home/ProductCard";
 
 function Page() {
     return (
-        <main>
+        <main className={"w-full h-full overflow-x-hidden"}>
             <BackgroundLines className="flex items-center justify-center w-full flex-col px-4">
                 <TypewriterEffectSmooth words={words}/>
                 <p className="text-neutral-500 dark:text-neutral-400 text-xl md:text-3xl max-w-3xl mx-auto mb-10">

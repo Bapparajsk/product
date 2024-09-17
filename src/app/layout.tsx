@@ -17,7 +17,7 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body
-        className={`w-full h-full bg-white dark:bg-black relative`}
+        className={`w-full h-full bg-white dark:bg-black`}
       >
       <ThemeProvider>
               <Navbar />

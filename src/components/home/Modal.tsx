@@ -44,7 +44,7 @@ export function IconsModals() {
 
     return (
         <div
-            className="relative flex h-[500px] w-full items-center justify-center overflow-hidden bg-background"
+            className="relative flex h-[500px] w-full items-center justify-center overflow-hidden bg-background px-10"
             ref={containerRef}
         >
             <div className="flex size-full flex-col max-w-lg max-h-[200px] items-stretch justify-between gap-10">

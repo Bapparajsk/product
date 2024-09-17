@@ -1,5 +1,5 @@
 "use client";
-import React from "react";
+import React, {ReactNode} from "react";
 import { motion } from "framer-motion";
 import Link from "next/link";
 import Image from "next/image";
@@ -19,18 +19,21 @@ export const MenuItem = ({
     item,
     children,
 }: {
-    setActive: (item: string) => void;
+    setActive: (item: string ) => void;
     active: string | null;
-    item: string;
+    item: string ;
     children?: React.ReactNode;
 }) => {
     return (
         <div onMouseEnter={() => setActive(item)} className="relative shadow-2xl">
             <motion.p
                 transition={{ duration: 0.3 }}
-                className="cursor-pointer text-black hover:opacity-[0.9] dark:text-white"
+                className="cursor-pointer text-black hover:opacity-[0.9] dark:text-white flex items-center justify-center space-x-2"
             >
-                {item}
+                {getIcon(item)}
+                <span className={"hidden md:block"}>
+                    {item}
+                </span>
             </motion.p>
             {active !== null && (
                 <motion.div
@@ -70,7 +73,7 @@ export const Menu = ({
     return (
         <nav
             onMouseLeave={() => setActive(null)} // resets the state
-            className="relative rounded-full border border-transparent dark:bg-black dark:border-white/[0.2] bg-white shadow-input flex justify-center space-x-4 px-8 py-6 shadow-2xl"
+            className="relative rounded-full border border-transparent dark:bg-black dark:border-white/[0.2] bg-white shadow-input flex justify-evenly md:justify-center space-x-4 px-8 py-6 shadow-2xl"
         >
             {children}
         </nav>
@@ -119,3 +122,25 @@ export const HoveredLink = ({ children, ...rest }: any) => {
         </Link>
     );
 };
+
+import {
+    IconHome,
+    IconBrandAzure,
+    IconTools,
+    IconBrandMailgun,
+} from "@tabler/icons-react";
+
+const getIcon = (icon: string): ReactNode => {
+    const map = {
+        "Home": <IconHome />,
+        "Services": <IconBrandAzure />,
+        "Products": <IconTools />,
+        "Contact": <IconBrandMailgun />,
+    };
+
+    if (icon in map) {
+        return map[icon as keyof typeof map];
+    }
+    // className={"cursor-pointer"} onClick={toggleTheme} color={"#000000"}
+    return <IconHome />;
+}

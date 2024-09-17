@@ -1,12 +1,15 @@
 "use client";
-import {ChangeEvent, useRef} from "react";
+import {ChangeEvent, useEffect, useRef} from "react";
 import { Toaster, toast } from "sonner";
 
 const Form = () => {
-    const emailRef = useRef<HTMLInputElement | null>(null);
     const nameRef = useRef<HTMLInputElement | null>(null);
+    const emailRef = useRef<HTMLInputElement | null>(null);
     const messageRef = useRef<HTMLTextAreaElement | null>(null);
 
+    useEffect(() => {
+        nameRef.current!.focus();
+    }, []);
 
     const handleSubmit = () => {
         const [name, email, message] = [nameRef.current!.value, emailRef.current!.value, messageRef.current!.value];
