@@ -1,3 +1,4 @@
+"use client";
 import {ReactNode} from "react";
 import {CardStack} from "@/ui/card-stack";
 import {cn} from "@/lib/utils";

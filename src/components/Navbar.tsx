@@ -1,8 +1,9 @@
 "use client";
-import React, { useState } from "react";
-import { HoveredLink, Menu, MenuItem, ProductItem } from "./ui/navbar-menu";
-import { cn } from "@/lib/utils";
+import React, {useState} from "react";
+import {HoveredLink, Menu, MenuItem, ProductItem} from "@/ui/navbar-menu";
 import ThemeToggle from "@/components/ThemeToggle";
+import {cn} from "@/lib/utils";
+import {IconAt,IconBrandGithub, IconBrandLinkedin, IconBrandWebflow} from "@tabler/icons-react";
 
 export function Navbar({ className }: { className?: string }) {
     const [active, setActive] = useState<string | null>(null);
@@ -47,17 +48,37 @@ export function Navbar({ className }: { className?: string }) {
                         />
                     </div>
                 </MenuItem>
-                <MenuItem setActive={setActive} active={active} item="Pricing">
+                <MenuItem setActive={setActive} active={active} item="Contact">
                     <div className="flex flex-col space-y-4 text-sm">
-                        <HoveredLink href="/hobby">Hobby</HoveredLink>
-                        <HoveredLink href="/individual">Individual</HoveredLink>
-                        <HoveredLink href="/team">Team</HoveredLink>
-                        <HoveredLink href="/enterprise">Enterprise</HoveredLink>
+                        <HoveredLink href="/contact">
+                            <span className={"w-auto flex items-center justify-center gap-2"}>
+                                <IconAt size={18}/>
+                                Email
+                            </span>
+                        </HoveredLink>
+                        <HoveredLink href="https://github.com/Bapparajsk" target={"_blank"}>
+                            <span className={"w-auto flex items-center justify-center gap-2"}>
+                                <IconBrandGithub size={18}/>
+                                GitHub
+                            </span>
+                        </HoveredLink>
+                        <HoveredLink href="https://www.linkedin.com/in/bappa-raj-sk-6a0153233/" target={"_blank"}>
+                            <span className={"w-auto flex items-center justify-center gap-2"}>
+                                <IconBrandLinkedin size={18}/>
+                                LinkedIn
+                            </span>
+                        </HoveredLink>
+                        <HoveredLink href="https://bapparaj.me" target={"_blank"}>
+                            <span className={"w-auto flex items-center justify-center gap-2"}>
+                                <IconBrandWebflow size={18}/>
+                                Portfolio
+                            </span>
+                        </HoveredLink>
                     </div>
                 </MenuItem>
                 <div className={"absolute right-5"}>
-                    <ThemeToggle />
-                </div>s
+                    <ThemeToggle/>
+                </div>
             </Menu>
         </div>
     );

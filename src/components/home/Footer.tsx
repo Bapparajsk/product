@@ -1,7 +1,11 @@
+"use client";
 import {FloatingDock} from "@/ui/floating-dock";
 import React from "react";
-import {IconBrandGithub, IconBrandX, IconExchange, IconHome, IconNewSection, IconTerminal2} from "@tabler/icons-react";
 import Image from "next/image";
+import {
+    IconBrandGithub, IconBrandX, IconExchange, IconHome, IconNewSection, IconTerminal2
+} from "@tabler/icons-react";
+
 
 const links = [
     {
@@ -11,7 +15,6 @@ const links = [
         ),
         href: "#",
     },
-
     {
         title: "Products",
         icon: (
@@ -65,7 +68,6 @@ const links = [
 export const Footer = () => {
     return (
         <FloatingDock
-
             items={links}
         />
     );

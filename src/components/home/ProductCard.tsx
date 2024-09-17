@@ -1,3 +1,5 @@
+"use client";
+
 import {Meteors} from "@/ui/meteors";
 import {useRouter} from "next/navigation";
 

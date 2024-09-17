@@ -2,7 +2,7 @@ import type { Metadata } from "next";
 import "./globals.css";
 import {ReactNode} from "react";
 import {Navbar} from "@/components/Navbar";
-
+import {ThemeProvider} from "@/context/ThemeContext";
 
 export const metadata: Metadata = {
   title: "Create Next App",
@@ -17,10 +17,12 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body
-        className={`w-full h-full bg-white dark:bg-black`}
+        className={`w-full h-full bg-white dark:bg-black relative`}
       >
-      <Navbar />
-        {children}
+      <ThemeProvider>
+              <Navbar />
+              {children}
+        </ThemeProvider>
       </body>
     </html>
   );

@@ -13,6 +13,9 @@ const config: Config = {
   darkMode: "class",
   theme: {
     extend: {
+        fontFamily: {
+            robo: ["Roboto Mono", "monospace"],
+        },
       colors: {
         background: "var(--background)",
         foreground: "var(--foreground)",
