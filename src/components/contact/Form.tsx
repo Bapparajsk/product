@@ -60,7 +60,7 @@ const Form = () => {
                             <span>CONTACT</span>
                             <span>US</span>
                         </div>
-                        <div className="app-contact">CONTACT INFO : +91 98326 16514</div>
+                        <div className="app-contact">CONTACT INFO : bapparajsk97@gmail.com</div>
                     </div>
                     <div className="screen-body-item">
                         <div className="app-form">

@@ -31,7 +31,7 @@ export const MenuItem = ({
                 className="cursor-pointer text-black hover:opacity-[0.9] dark:text-white flex items-center justify-center space-x-2"
             >
                 {getIcon(item)}
-                <span className={"hidden md:block"}>
+                <span className={"hidden sm:block"}>
                     {item}
                 </span>
             </motion.p>
@@ -92,13 +92,13 @@ export const ProductItem = ({
     src: string;
 }) => {
     return (
-        <Link href={href} className="flex space-x-2">
+        <Link href={href} className="flex space-x-2" target={href.startsWith("https://") ? "_blank" : "_self"}>
             <Image
                 src={src}
                 width={140}
                 height={70}
                 alt={title}
-                className="flex-shrink-0 rounded-md shadow-2xl"
+                className="flex-shrink-0 rounded-md shadow-2xl object-cover"
             />
             <div>
                 <h4 className="text-xl font-bold mb-1 text-black dark:text-white">
